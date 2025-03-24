@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Processing Web App</title>
+</head>
+<body>
+    <h2>Upload an Image for Processing</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required><br>
+        <label>Method:</label>
+        <select name="method">
+            <option value="Gaussian Blur">Gaussian Blur</option>
+            <option value="Median Blur">Median Blur</option>
+            <option value="Canny">Canny Edge Detection</option>
+        </select><br>
+        <label>Param1:</label>
+        <input type="number" name="param1" value="5"><br>
+        <label>Param2:</label>
+        <input type="number" name="param2" value="5"><br>
+        <button type="submit">Process Image</button>
+    </form>
+</body>
+</html>
